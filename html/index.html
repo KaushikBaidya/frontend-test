@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Smartwatch Store</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body,
+			p,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-family: "Roboto", sans-serif;
+			}
+			.size-btn.bg-blue-500 {
+				background-color: #2563eb; /* Tailwind's blue-500 */
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body class="bg-gray-100 font-sans">
+		<div
+			class="max-w-6xl mx-auto flex justify-center items-center min-h-[80vh]"
+		>
+			<div class="p-6 flex items-center gap-6 justify-center">
+				<!-- Left Image Section -->
+				<div class="w-full">
+					<img
+						id="product-image"
+						src="images/f1-image.png"
+						alt="Smart Watch"
+						class="w-[600px] h-auto rounded-lg"
+					/>
+				</div>
+
+				<!-- Right Content Section -->
+				<div class="flex flex-col gap-2">
+					<!-- Header -->
+					<h1 class="text-2xl font-bold text-gray-800">
+						Classy Modern Smart Watch
+					</h1>
+
+					<!-- Ratings -->
+					<div class="flex items-center mt-2">
+						<div class="flex text-yellow-500">
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span class="text-gray-300">&#9733;</span>
+						</div>
+						<span class="ml-2 text-gray-600">4.0 (2 Reviews)</span>
+					</div>
+
+					<!-- Price -->
+					<p class="text-lg font-semibold text-gray-700 mt-3">
+						<span class="line-through text-gray-600">$99.99</span>
+						<span class="text-[#816BFF]">$79</span>
+					</p>
+
+					<!-- Description -->
+					<p class="text-gray-600 text-sm mt-3">
+						I must explain to you how all this mistaken idea of denoun cing ple
+						praising pain was born and I will give you a complete account of the
+						system, and expound the actual teaching.
+					</p>
+					<div class="w-3/4 grid grid-cols-2 text-sm">
+						<div class="flex flex-col items-start justify-start gap-2">
+							<span class="text-gray-600">Type</span>
+							<span class="text-gray-600 font-semibold text-gray-700"
+								>Watch</span
+							>
+						</div>
+						<div class="flex flex-col items-start justify-start gap-2">
+							<span class="text-gray-600">Model Number</span>
+							<span class="text-gray-600 font-semibold text-gray-700">
+								Forerunner 290XT
+							</span>
+						</div>
+					</div>
+
+					<!-- Brand Colors -->
+					<div class="mt-2 text-sm">
+						<h3 class="text-gray-800 font-medium">Brand Color</h3>
+						<div class="flex items-center gap-4 mt-2">
+							<label class="flex items-center cursor-pointer">
+								<input
+									type="radio"
+									name="color"
+									value="violet"
+									class="hidden color-select"
+									data-image="images/f1-image.png"
+									checked
+								/>
+								<div class="w-6 h-6 bg-[#816BFF] rounded-full"></div>
+							</label>
+							<label class="flex items-center cursor-pointer">
+								<input
+									type="radio"
+									name="color"
+									value="cyan"
+									class="hidden color-select"
+									data-image="images/f2-image.png"
+								/>
+								<div class="w-6 h-6 bg-[#1FCEC9] rounded-full"></div>
+							</label>
+							<label class="flex items-center cursor-pointer">
+								<input
+									type="radio"
+									name="color"
+									value="blue"
+									class="hidden color-select"
+									data-image="images/f3-image.png"
+								/>
+								<div class="w-6 h-6 bg-[#4B97D3] rounded-full"></div>
+							</label>
+							<label class="flex items-center cursor-pointer">
+								<input
+									type="radio"
+									name="color"
+									value="black"
+									class="hidden color-select"
+									data-image="images/f4-image.png"
+								/>
+								<div class="w-6 h-6 bg-black rounded-full"></div>
+							</label>
+						</div>
+					</div>
+
+					<!-- Size Buttons -->
+					<div class="mt-2 text-sm">
+						<h3 class="text-gray-800 font-medium">Select Size</h3>
+						<div class="flex items-center gap-4 mt-2">
+							<button
+								class="size-btn border-2 border-gray-400 py-1 px-4 rounded hover:bg-gray-200"
+							>
+								<span class="font-bold">S</span>
+								<span class="text-sm font-normal">$69</span>
+							</button>
+							<button
+								class="size-btn border-2 border-gray-400 py-1 px-4 rounded hover:bg-gray-200"
+							>
+								<span class="font-bold">M</span>
+								<span class="text-sm font-normal">$79</span>
+							</button>
+							<button
+								class="size-btn border-2 border-gray-400 py-1 px-4 rounded hover:bg-gray-200"
+							>
+								<span class="font-bold">L</span>
+								<span class="text-sm font-normal">$89</span>
+							</button>
+							<button
+								class="size-btn border-2 border-gray-400 py-1 px-4 rounded hover:bg-gray-200"
+							>
+								<span class="font-bold">XL</span>
+								<span class="text-sm font-normal">$99</span>
+							</button>
+						</div>
+					</div>
+
+					<!-- Counter and Buttons -->
+					<div class="mt-4 flex items-center gap-4">
+						<div class="flex items-center gap-2">
+							<button
+								id="decrease"
+								class="border border-gray-400 px-3 py-1 rounded"
+							>
+								-
+							</button>
+							<span id="counter" class="text-lg font-medium">1</span>
+							<button
+								id="increase"
+								class="border border-gray-400 px-3 py-1 rounded"
+							>
+								+
+							</button>
+						</div>
+						<button
+							id="add-to-cart"
+							class="bg-[#816BFF] text-white py-2 px-4 rounded"
+						>
+							Add to Cart
+						</button>
+						<button class="px-4 rounded hover:bg-gray-200 text-4xl">♡</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Checkout Div -->
+		<div
+			id="checkout-div"
+			class="bg-[#FFBB5A] w-[300px] mx-auto p-4 flex items-center justify-center rounded-full gap-2 text-[#364A63] cursor-pointer"
+		>
+			<span class="font-medium">Checkout</span>
+			<span id="cart-count" class="bg-white text-sm rounded py-1 px-2">0</span>
+		</div>
+
+		<!-- Modal for Cart -->
+		<div
+			id="cart-modal"
+			class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden"
+		>
+			<div class="bg-white rounded-lg p-6 w-[50rem]">
+				<h2 class="text-xl font-bold mb-4">Your Cart</h2>
+				<!-- Table Header -->
+				<div
+					class="grid grid-cols-5 text-gray-600 font-medium text-sm border-b pb-2 mb-4"
+				>
+					<span>Item</span>
+					<span>Color</span>
+					<span>Size</span>
+					<span>Qty</span>
+					<span>Price</span>
+				</div>
+				<!-- Cart Items -->
+				<div id="cart-items" class="space-y-4 mb-4">
+					<!-- Items will be dynamically injected here -->
+				</div>
+				<!-- Total Price -->
+				<div class="flex justify-between items-center border-t pt-4 mt-4">
+					<span class="text-lg font-semibold">Total:</span>
+					<span id="total-price" class="text-lg font-bold text-gray-800"
+						>$0.00</span
+					>
+				</div>
+				<!-- Action Buttons -->
+				<div class="flex justify-between items-center mt-4">
+					<button
+						id="continue-shopping"
+						class="border border-gray-400 py-2 px-4 rounded hover:bg-gray-200"
+					>
+						Continue Shopping
+					</button>
+					<button
+						class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+					>
+						Checkout
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
